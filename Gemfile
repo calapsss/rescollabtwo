@@ -43,7 +43,6 @@ group :development, :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'database_cleaner'
-  gem 'phantomjs'
 end
 
 group :development do
