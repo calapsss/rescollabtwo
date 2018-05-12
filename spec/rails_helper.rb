@@ -76,11 +76,11 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   require 'capybara/poltergeist'
-  require 'factory_girl_rails'
+  require 'factory_bot_rails'
   require 'capybara/rspec'
 
   config.include Devise::Test::IntegrationHelpers, type: :feature
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
   Capybara.javascript_driver = :poltergeist
   Capybara.server = :puma 
 
