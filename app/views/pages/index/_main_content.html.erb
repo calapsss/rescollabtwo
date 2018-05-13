@@ -1,5 +1,19 @@
-   <div id="main-content" class="col-sm-9">
+<div id="main-content" class="col-sm-9">
+  <h3 class="page-name"><%= link_to 'Life Science', life_posts_path %></h3>
+  <div class="row">
+    <%= render @life_posts %>
+    <%= render no_posts_partial_path(@life_posts) %>
+  </div><!-- row -->
 
-    <%= render @posts %>
+  <h3 class="page-name"><%= link_to 'Physical Science', physical_posts_path %></h3>
+  <div class="row">
+    <%= render @physical_posts %>
+    <%= render no_posts_partial_path(@physical_posts) %>
+  </div><!-- row -->
 
-   </div><!-- main-content -->
+  <h3 class="page-name"><%= link_to 'Applied Science', applied_posts_path %></h3>
+  <div class="row">
+    <%= render @applied_posts %>
+    <%= render no_posts_partial_path(@applied_posts) %>
+  </div><!-- row -->
+</div><!-- main_content -->
