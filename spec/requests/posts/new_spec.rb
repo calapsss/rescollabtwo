@@ -20,4 +20,3 @@ RSpec.describe "new", :type => :request do
   end
 
 end
-view raw
