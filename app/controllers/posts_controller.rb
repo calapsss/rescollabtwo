@@ -3,7 +3,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   	end
 
-  	  def life
+  def life
     posts_for_branch(params[:action])
   end
 
