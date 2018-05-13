@@ -36,6 +36,14 @@ class PostsController < ApplicationController
   elsif category.present? && search.present?
     posts = Post.by_category(branch, category).search(search)
   else
-  end	end
+  end	
+end
+
+
+respond_to do |format|
+  format.html
+  format.js { render partial: 'posts/posts_pagination_page' }
+end
+
 
 end
