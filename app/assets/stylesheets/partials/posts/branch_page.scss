@@ -101,6 +101,14 @@
   height:10px;
 }
 
+
+
+.infinite-scroll {
+  display: none;
+}
+
+
+
 #search-form {
   position:relative;
   input {
@@ -119,9 +127,4 @@
     margin: 10px 0; 
     padding-left: 30px;
   }
-}
-
-
-.infinite-scroll {
-  display: none;
 }
