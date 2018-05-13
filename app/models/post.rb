@@ -4,9 +4,9 @@ class Post < ApplicationRecord
 
   default_scope -> { includes(:user).order(created_at: :desc) }
 
-  ##copied search engine code
+
   
-    scope :by_category, -> (branch, category_name) do 
+  scope :by_category, -> (branch, category_name) do 
     joins(:category).where(categories: {name: category_name, branch: branch}) 
   end
 

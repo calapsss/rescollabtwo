@@ -29,15 +29,15 @@ def seed_categories
   physical = ['Nanotechnology', 'Thermodynamics', 'Theoretical', 'Quantum']
 
   life.each do |name|
-    Category.create(branch: 'Life Science', name: name)
+    Category.create(branch: 'life', name: name)
   end
 
   applied.each do |name|
-    Category.create(branch: 'Applied Science', name: name)
+    Category.create(branch: 'applied', name: name)
   end
 
   physical.each do |name|
-    Category.create(branch: 'Physical Science', name: name)
+    Category.create(branch: 'physical', name: name)
   end
 end
 
