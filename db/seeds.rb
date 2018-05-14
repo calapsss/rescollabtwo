@@ -45,7 +45,7 @@ def seed_posts
   categories = Category.all
 
   categories.each do |category|
-    5.times do
+    10.times do
       Post.create(
         title: Faker::Lorem.sentences[0], 
         content: Faker::Lorem.sentences[0], 
