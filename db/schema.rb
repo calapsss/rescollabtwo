@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20180512130136) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.oid "researchpaper", null: false
     t.bigint "category_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false
