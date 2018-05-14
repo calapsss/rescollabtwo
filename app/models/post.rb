@@ -1,8 +1,9 @@
 class Post < ApplicationRecord
   belongs_to :user
   belongs_to :category
-  
 
+  has_attached_file :respaper
+  validates_attachment_content_type :respaper, content_type: %w(application/pdf application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document)
 
   default_scope -> { includes(:user).order(created_at: :desc) }
 
