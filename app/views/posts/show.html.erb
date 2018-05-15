@@ -1,10 +1,13 @@
-<div id="single-post-content" class="container">
+<div id="single-post-content" class="container-fluid">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <div class="posted-by">Posted by <%= @post.user.name %></div>
       <h3><%= @post.title %></h3>
+      <div class="posted-by">Posted by <%= @post.user.name %></div>
+
       <p><%= @post.content %></p>
-      <p><%= image_tag @post.respaper.url %></p>
+
+      <%= link_to 'Download Paper', @post.respaper.url(:original, false) %>
+      
     </div>
   </div><!-- row -->
 </div>
