@@ -41,22 +41,21 @@ def seed_categories
   end
 end
 
-def seed_posts
-  categories = Category.all
+# def seed_posts
+#   categories = Category.all
 
-  categories.each do |category|
-    10.times do
-      Post.create(
-        title: Faker::Lorem.sentences[0], 
-        content: Faker::Lorem.sentences[0], 
-        user_id: rand(1..9), 
-        category_id: category.id
+#   categories.each do |category|
+#     10.times do
+#       Post.create(
+#         title: Faker::Lorem.sentences[0], 
+#         content: Faker::Lorem.sentences[0], 
+#         user_id: rand(1..9), 
+#         category_id: category.id
         
-      )
-    end
-  end
-end
+#       )
+#     end
+#   end
+# end
 
 seed_users
 seed_categories
-seed_posts

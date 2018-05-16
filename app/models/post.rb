@@ -7,6 +7,8 @@ class Post < ApplicationRecord
 
   default_scope -> { includes(:user).order(created_at: :desc) }
 
+  acts_as_commontable
+  acts_as_commontable dependent: :destroy
 
   
   scope :by_category, -> (branch, category_name) do 

@@ -67,6 +67,6 @@ gem 'will_paginate', '~> 3.1.0'
 
 gem "paperclip", "~> 6.0.0"
 
-gem 'activeadmin', github: 'activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+gem 'commontator', '~> 5.1.0'
 
